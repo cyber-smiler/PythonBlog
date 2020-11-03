@@ -8,7 +8,7 @@ class BlogPost(models.Model):
     blog_slug = models.CharField(max_length=50)
     blog_content = models.TextField()
     created_date = models.DateTimeField()
-    author_uid = models.IntegerField()
+    author_id = models.IntegerField()
 
     class Meta:
         ordering = ['-created_date']
